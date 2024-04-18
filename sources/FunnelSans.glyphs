@@ -81,7 +81,7 @@ tag = aalt;
 {
 automatic = 1;
 code = "lookup ccmp_Other_1 {
-	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
 	@CombiningNonTopAccents = [cedillacomb ogonekcomb];
 	sub [i j]' @CombiningTopAccents by [idotless jdotless];
 	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
@@ -143,11 +143,13 @@ sub udieresis by udieresis.ss01;
 sub wdieresis by wdieresis.ss01;
 sub ydieresis by ydieresis.ss01;
 sub zdotaccent by zdotaccent.ss01;
+sub period by period.ss01;
 sub colon by colon.ss01;
+sub semicolon by semicolon.ss01;
 sub ellipsis by ellipsis.ss01;
+sub dieresiscomb.narrow by dieresiscomb.narrow.ss01;
 sub dieresiscomb by dieresiscomb.ss01;
 sub dotaccentcomb by dotaccentcomb.ss01;
-sub dieresiscomb.narrow by dieresiscomb.narrow.ss01;
 ";
 labels = (
 {
@@ -22884,6 +22886,69 @@ unicode = 46;
 },
 {
 color = 9;
+glyphname = period.ss01;
+kernLeft = period.right;
+kernRight = period.left;
+lastChange = "2024-04-18 15:04:43 +0000";
+layers = (
+{
+layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
+shapes = (
+{
+closed = 1;
+nodes = (
+(170,-12,o),
+(202,20,o),
+(202,60,cs),
+(202,100,o),
+(170,132,o),
+(130,132,cs),
+(90,132,o),
+(58,100,o),
+(58,60,cs),
+(58,20,o),
+(90,-12,o),
+(130,-12,cs)
+);
+}
+);
+userData = {
+com.schriftgestaltung.Glyphs.category = Punctuation;
+com.schriftgestaltung.Glyphs.subCategory = Other;
+};
+width = 260;
+},
+{
+layerId = "FB8C5FF2-3B42-4CDF-AA26-B13980DDC748";
+shapes = (
+{
+closed = 1;
+nodes = (
+(210,-12,o),
+(258,36,o),
+(258,96,cs),
+(258,156,o),
+(210,204,o),
+(150,204,cs),
+(90,204,o),
+(42,156,o),
+(42,96,cs),
+(42,36,o),
+(90,-12,o),
+(150,-12,cs)
+);
+}
+);
+userData = {
+com.schriftgestaltung.Glyphs.category = Punctuation;
+com.schriftgestaltung.Glyphs.subCategory = Other;
+};
+width = 300;
+}
+);
+},
+{
+color = 9;
 glyphname = comma;
 kernLeft = period.right;
 kernRight = period.left;
@@ -23268,70 +23333,6 @@ com.schriftgestaltung.Glyphs.category = Punctuation;
 com.schriftgestaltung.Glyphs.subCategory = Other;
 };
 width = 1200;
-}
-);
-},
-{
-color = 9;
-export = 0;
-glyphname = period.ss01;
-kernLeft = period.right;
-kernRight = period.left;
-lastChange = "2024-04-18 14:00:15 +0000";
-layers = (
-{
-layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
-shapes = (
-{
-closed = 1;
-nodes = (
-(170,-12,o),
-(202,20,o),
-(202,60,cs),
-(202,100,o),
-(170,132,o),
-(130,132,cs),
-(90,132,o),
-(58,100,o),
-(58,60,cs),
-(58,20,o),
-(90,-12,o),
-(130,-12,cs)
-);
-}
-);
-userData = {
-com.schriftgestaltung.Glyphs.category = Punctuation;
-com.schriftgestaltung.Glyphs.subCategory = Other;
-};
-width = 260;
-},
-{
-layerId = "FB8C5FF2-3B42-4CDF-AA26-B13980DDC748";
-shapes = (
-{
-closed = 1;
-nodes = (
-(210,-12,o),
-(258,36,o),
-(258,96,cs),
-(258,156,o),
-(210,204,o),
-(150,204,cs),
-(90,204,o),
-(42,156,o),
-(42,96,cs),
-(42,36,o),
-(90,-12,o),
-(150,-12,cs)
-);
-}
-);
-userData = {
-com.schriftgestaltung.Glyphs.category = Punctuation;
-com.schriftgestaltung.Glyphs.subCategory = Other;
-};
-width = 300;
 }
 );
 },
