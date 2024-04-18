@@ -1,21 +1,6 @@
 {
 .appVersion = "3151";
 .formatVersion = 3;
-DisplayStrings = (
-"abcdefghiıjȷklmnopqrstuvwxyz",
-"kakbkckdkekfkgkhkikjkkklkmknkokpkqkrksktkukvkwkxkykzkåkäkök",
-"2% ",
-MNVUMPANALVAND,
-"jajbjcjdjejfjgjhjijjjkjljmjnjojpjqjrjsjtjujvjwjxjyjzjåjäjöj",
-"00102030405060708090",
-"Ergänzt von Typefacts: Ist da kfemand“? „Volker?“ – „Wolf“. „Anna?“ – „Yvonne“. „Torsten fragte: ‚Vladimir?‘, später rief er ‚Wolf‘ und ‚Theresa‘, dann ‚Andreas‘ und ‚Yvonne‘“. Eleganter: Ist da »Jemand«? »Volker?« – »Wolf«. »Anna?« – »Yvonne«. »Torsten fragte: ›Vladimir?‹, später rief er ›Wolf‹ und ›Theresa‹, dann ›Andreas‹ und ›Yvonne‹«.",
-"Ergänzt von Typefacts: Ist da „Jemand“? „Volker?“ – „Wolf“. „Anna?“ – „Yvonne“. „Torsten fragte: ‚Vladimir?‘, später rief er ‚Wolf‘ und ‚Theresa‘, dann ‚Andreas‘ und ‚Yvonne‘“. Eleganter: Ist da »Jemand«? »Volker?« – »Wolf«. »Anna?« – »Yvonne«. »Torsten fragte: ›Vladimir?‹, später rief er ›Wolf‹ und ›Theresa‹, dann ›Andreas‹ und ›Yvonne‹«.",
-"Perhaps the very acme of luxurious bathing is reached in the Soap-bath, an application of hot water and soap to the whole body, followed immediately by a cold plunge, or a sponge bath. A bath is at once a necessity and a luxury, and in order to obtain the greatest number of benefits, including increased health, appetite, vigour, and good spirits, the Soap-bath is the most effectual, and moreover the pleasantest and least trying to the weakly or over sensitive constitution.",
-"aáăâäàāąåãbcćčçċdďeéěêëėèēęfgğģġhħiıíîï/idotaccent ìĳīįjȷkķlĺľļmnńňņñŋoóôöòőōõpþqrŕřŗsśšşșßtťțuúŭûüùűūųůvwẃŵẅẁxyýŷÿỳzźžż",
-"hahbhchdhehfhghhhihjhkhlhmhnhohphqhrhshthuhvhwhxhyhzhåhähöh",
-"Kanske når man toppen av lyxig badning med Tvålbubbelbadet, en tillämpning av varmt vatten och tvål på hela kroppen, följt omedelbart av ett kallt dopp eller en svampbad. Ett bad är både en nödvändighet och en lyx. För att få flest fördelar, inklusive förbättrad hälsa, aptit, vitalitet och gott humör, är Tvålbubbelbadet mest effektivt och dessutom trevligast och minst påfrestande för en svag eller överkänslig kropp. Njut av badet till fullo!",
-"zazbzczdzezfzgzhzizjzkzlzmznzozpzqzrzsztzuzvzwzxzyzzzåzäzöz"
-);
 axes = (
 {
 name = Weight;
@@ -166,7 +151,7 @@ code = "sub g by g.ss02;
 labels = (
 {
 language = dflt;
-value = "Conventional letter g";
+value = "Alternative g";
 }
 );
 tag = ss02;
@@ -178,7 +163,7 @@ code = "sub y by y.ss03;
 labels = (
 {
 language = dflt;
-value = "Old y";
+value = "Alternative y";
 }
 );
 tag = ss03;
@@ -22738,7 +22723,7 @@ unicode = 8260;
 },
 {
 glyphname = .notdef;
-lastChange = "2024-04-16 08:19:53 +0000";
+lastChange = "2024-04-18 17:00:15 +0000";
 layers = (
 {
 layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
@@ -24311,8 +24296,9 @@ width = 1200;
 unicode = 8212;
 },
 {
+color = 9;
 glyphname = underscore;
-lastChange = "2024-04-18 11:06:24 +0000";
+lastChange = "2024-04-18 16:58:42 +0000";
 layers = (
 {
 layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
@@ -27405,9 +27391,8 @@ unicode = 165;
 },
 {
 color = 9;
-export = 0;
 glyphname = plus;
-lastChange = "2024-04-17 17:40:21 +0000";
+lastChange = "2024-04-18 16:57:03 +0000";
 layers = (
 {
 layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
@@ -27468,9 +27453,8 @@ unicode = 43;
 },
 {
 color = 9;
-export = 0;
 glyphname = minus;
-lastChange = "2024-04-17 17:40:21 +0000";
+lastChange = "2024-04-18 16:57:03 +0000";
 layers = (
 {
 layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
@@ -27504,6 +27488,56 @@ width = 660;
 }
 );
 unicode = 8722;
+},
+{
+color = 4;
+glyphname = percent;
+lastChange = "2024-04-18 16:56:54 +0000";
+layers = (
+{
+layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
+shapes = (
+{
+ref = zero.numr;
+},
+{
+pos = (460,0);
+ref = fraction;
+},
+{
+pos = (520,0);
+ref = zero.dnom;
+}
+);
+userData = {
+com.schriftgestaltung.Glyphs.category = Symbol;
+com.schriftgestaltung.Glyphs.subCategory = Math;
+};
+width = 980;
+},
+{
+layerId = "FB8C5FF2-3B42-4CDF-AA26-B13980DDC748";
+shapes = (
+{
+ref = zero.numr;
+},
+{
+pos = (460,0);
+ref = fraction;
+},
+{
+pos = (580,0);
+ref = zero.dnom;
+}
+);
+userData = {
+com.schriftgestaltung.Glyphs.category = Symbol;
+com.schriftgestaltung.Glyphs.subCategory = Math;
+};
+width = 1040;
+}
+);
+unicode = 37;
 },
 {
 export = 0;
@@ -27990,57 +28024,6 @@ width = 642;
 }
 );
 unicode = 94;
-},
-{
-color = 4;
-export = 0;
-glyphname = percent;
-lastChange = "2024-04-18 12:00:50 +0000";
-layers = (
-{
-layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
-shapes = (
-{
-ref = zero.numr;
-},
-{
-pos = (460,0);
-ref = fraction;
-},
-{
-pos = (520,0);
-ref = zero.dnom;
-}
-);
-userData = {
-com.schriftgestaltung.Glyphs.category = Symbol;
-com.schriftgestaltung.Glyphs.subCategory = Math;
-};
-width = 980;
-},
-{
-layerId = "FB8C5FF2-3B42-4CDF-AA26-B13980DDC748";
-shapes = (
-{
-ref = zero.numr;
-},
-{
-pos = (460,0);
-ref = fraction;
-},
-{
-pos = (580,0);
-ref = zero.dnom;
-}
-);
-userData = {
-com.schriftgestaltung.Glyphs.category = Symbol;
-com.schriftgestaltung.Glyphs.subCategory = Math;
-};
-width = 1040;
-}
-);
-unicode = 37;
 },
 {
 color = 9;
@@ -32487,7 +32470,7 @@ value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
 },
 {
 key = versionString;
-value = "Version 1.000; Development; Release 1; Build 2";
+value = "Version 1.000; Development; Release 1; Build 3";
 }
 );
 settings = {
