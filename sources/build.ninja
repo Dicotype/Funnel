@@ -1,0 +1,61 @@
+# buildVariable: Build a variable font from a source file
+rule buildVariable
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o variable $
+      $fontmake_type $in $args $stamp
+  description = buildVariable
+
+# fix: Run gftools-fix
+rule fix
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner gftools-fix-font -o $out $args $in $stamp
+  description = fix
+
+# buildStat: Build a STAT table from one or more source files
+rule buildSTAT-operation
+  command = gftools-gen-stat --out $tempdir $args -- $in && mv $finalfile $
+      $out $stamp
+rule buildSTAT-postprocess
+  command = gftools-gen-stat --inplace $args -- $in $stamp
+
+# compress: Compress to webfont
+rule compress
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fonttools ttLib.woff2 compress -o $out $in $
+      $stamp
+  description = compress
+
+# copy: Copy a file
+rule copy
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner cp $in $out $stamp
+  description = copy
+
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpgsbp5j20
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpgsbp5j20: $
+    buildVariable FunnelSans.glyphs
+  operation = buildVariable
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+# Postprocessing  with BuildSTAT
+build $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp0jwbyac2.buildStatstamp: $
+    buildSTAT-postprocess ../fonts/variable/FunnelSans[wght].ttf
+  stamp =  && touch $
+      /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp0jwbyac2.buildStatstamp
+  postprocess = buildStat
+  args = --src /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpgadcmw3h
+# Generating ../fonts/webfonts/FunnelSans[wght].woff2
+build ../fonts/webfonts/FunnelSans[wght].woff2: compress $
+    ../fonts/variable/FunnelSans[wght].ttf
+  operation = compress
+# Generating ../fonts/variable/FunnelSans[wght].ttf
+build ../fonts/variable/FunnelSans[wght].ttf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpgsbp5j20
+  operation = fix
+  args = 
+default $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp0jwbyac2.buildStatstamp $
+    ../fonts/webfonts/FunnelSans[wght].woff2
