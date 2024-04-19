@@ -19,6 +19,6 @@ stat:
     - name: ExtraBold
       value: 800
 outputDir: "../fonts"
-buildTTF: false
-buildOTF: false
-autohintTTF: false
+buildTTF: true
+buildOTF: true
+autohintTTF: true
