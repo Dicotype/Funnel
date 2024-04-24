@@ -8,3 +8,4 @@
 #     Name <email address>
 
 Kristian Möller <kristian@ktkm.se>
+Katarina Streiler <katarina.streiler@se.nordddb.com>
