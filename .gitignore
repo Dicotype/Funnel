@@ -1,5 +1,6 @@
 .DS_Store
-documents
+material
 sources backup
 fonts backup
 leverabler
+sources/build_Funnel.sh

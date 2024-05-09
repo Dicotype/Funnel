@@ -1,8 +1,10 @@
 sources:
   - FunnelSans.glyphs
+  - FunnelSans-Italic.glyphs
 familyName: "Funnel Sans"
 axisOrder:
   - wght
+  - ital
 stat:
   FunnelSans[wght].ttf:
   - name: Weight
@@ -12,13 +14,43 @@ stat:
       value: 300
     - name: Regular
       value: 400
+      linkedValue: 700
+      flags: 2
     - name: Medium
       value: 500
     - name: Bold
       value: 700
     - name: ExtraBold
       value: 800
-outputDir: "../fonts"
+  - name: Italic
+    tag: ital
+    values:
+    - name: Roman
+      value: 0
+      linkedValue: 1
+      flags: 2
+  FunnelSans-Italic[wght].ttf:
+  - name: Weight
+    tag: wght
+    values:
+    - name: Light
+      value: 300
+    - name: Regular
+      value: 400
+      linkedValue: 700
+      flags: 2
+    - name: Medium
+      value: 500
+    - name: Bold
+      value: 700
+    - name: ExtraBold
+      value: 800
+  - name: Italic
+    tag: ital
+    values:
+    - name: Italic
+      value: 1
+outputDir: "../fonts/Funnel_Sans"
 buildTTF: true
 buildOTF: true
 autohintTTF: true
