@@ -7468,7 +7468,7 @@ unicode = 7838;
 glyphname = T;
 kernLeft = T;
 kernRight = T;
-lastChange = "2024-05-06 18:20:58 +0000";
+lastChange = "2024-05-10 05:50:32 +0000";
 layers = (
 {
 anchors = (
@@ -38051,6 +38051,7 @@ kerningLTR = {
 };
 "@MMK_L_S" = {
 "@MMK_R_A" = -20;
+"@MMK_R_T" = -30;
 "@MMK_R_V" = -30;
 "@MMK_R_X" = -30;
 "@MMK_R_Y" = -50;
@@ -38537,6 +38538,7 @@ three.lf = -20;
 };
 "@MMK_L_S" = {
 "@MMK_R_A" = -20;
+"@MMK_R_T" = -30;
 "@MMK_R_V" = -30;
 "@MMK_R_X" = -30;
 "@MMK_R_Y" = -50;
@@ -38953,7 +38955,7 @@ value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
 },
 {
 key = versionString;
-value = "Version 1.000; Beta; Release 2; Build 19";
+value = "Version 1.000; Beta; Release 2; Build 20";
 },
 {
 key = vendorID;
