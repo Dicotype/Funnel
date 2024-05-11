@@ -41,7 +41,7 @@ name = "Variable Font Origin";
 value = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
 }
 );
-date = "2024-04-24 06:05:27 +0000";
+date = "2024-05-11 08:03:47 +0000";
 familyName = "Funnel Display";
 featurePrefixes = (
 {
@@ -3757,7 +3757,7 @@ unicode = 302;
 glyphname = J;
 kernLeft = B;
 kernRight = H;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-05-11 07:59:54 +0000";
 layers = (
 {
 anchors = (
@@ -38325,6 +38325,9 @@ question = 30;
 "@MMK_R_u" = -30;
 "@MMK_R_v" = -20;
 };
+"@MMK_L_parenleft" = {
+"@MMK_R_B" = 60;
+};
 "@MMK_L_period" = {
 "@MMK_R_A" = 20;
 "@MMK_R_C" = -40;
@@ -38813,6 +38816,9 @@ question = 30;
 "@MMK_R_u" = -30;
 "@MMK_R_v" = -20;
 };
+"@MMK_L_parenleft" = {
+"@MMK_R_B" = 60;
+};
 "@MMK_L_period" = {
 "@MMK_R_A" = 20;
 "@MMK_R_C" = -40;
@@ -39041,7 +39047,7 @@ value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
 },
 {
 key = versionString;
-value = "Version 1.000; Beta; Release 2; Build 20";
+value = "Version 1.000; Beta; Release 3; Build 21";
 },
 {
 key = vendorID;

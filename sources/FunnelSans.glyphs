@@ -41,7 +41,7 @@ name = "Variable Font Origin";
 value = "4683CC84-822E-4D29-9A51-72FC3DB48604";
 }
 );
-date = "2024-04-24 06:05:27 +0000";
+date = "2024-05-11 08:04:05 +0000";
 familyName = "Funnel Sans";
 featurePrefixes = (
 {
@@ -3733,7 +3733,7 @@ unicode = 302;
 glyphname = J;
 kernLeft = B;
 kernRight = H;
-lastChange = "2024-05-06 18:20:58 +0000";
+lastChange = "2024-05-11 07:58:47 +0000";
 layers = (
 {
 anchors = (
@@ -9156,7 +9156,7 @@ unicode = 379;
 glyphname = a;
 kernLeft = a;
 kernRight = a;
-lastChange = "2024-05-08 12:08:59 +0000";
+lastChange = "2024-05-11 07:57:55 +0000";
 layers = (
 {
 anchors = (
@@ -9324,66 +9324,6 @@ name = top;
 pos = (300,600);
 }
 );
-background = {
-shapes = (
-{
-closed = 1;
-nodes = (
-(178,-12,o),
-(88,34,o),
-(36,115,o),
-(36,166,qs),
-(36,258,o),
-(164,344,o),
-(254,352,qs),
-(420,365,l),
-(420,384,ls),
-(420,446,o),
-(353,516,o),
-(295,516,qs),
-(286,516,ls),
-(236,516,o),
-(167,469,o),
-(162,426,q),
-(48,426,l),
-(53,509,o),
-(188,612,o),
-(290,612,qs),
-(367,612,o),
-(478,551,o),
-(534,446,o),
-(534,384,qs),
-(534,132,ls),
-(534,42,o),
-(540,0,q),
-(432,0,l),
-(426,30,o),
-(426,96,q),
-(407,52,o),
-(302,-12,o),
-(234,-12,qs)
-);
-},
-{
-closed = 1;
-nodes = (
-(257,84,ls),
-(294,84,o),
-(370,120,o),
-(420,181,o),
-(420,216,qs),
-(420,277,l),
-(270,265,ls),
-(216,260,o),
-(150,211,o),
-(150,170,qs),
-(150,133,o),
-(205,84,o),
-(247,84,qs)
-);
-}
-);
-};
 guides = (
 {
 angle = 186.6135;
@@ -38238,6 +38178,9 @@ question = 30;
 "@MMK_R_u" = -30;
 "@MMK_R_v" = -20;
 };
+"@MMK_L_parenleft" = {
+"@MMK_R_B" = 60;
+};
 "@MMK_L_period" = {
 "@MMK_R_A" = 20;
 "@MMK_R_C" = -40;
@@ -38726,6 +38669,9 @@ question = 30;
 "@MMK_R_u" = -30;
 "@MMK_R_v" = -20;
 };
+"@MMK_L_parenleft" = {
+"@MMK_R_B" = 60;
+};
 "@MMK_L_period" = {
 "@MMK_R_A" = 20;
 "@MMK_R_C" = -40;
@@ -38955,7 +38901,7 @@ value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
 },
 {
 key = versionString;
-value = "Version 1.000; Beta; Release 2; Build 20";
+value = "Version 1.000; Beta; Release 3; Build 21";
 },
 {
 key = vendorID;

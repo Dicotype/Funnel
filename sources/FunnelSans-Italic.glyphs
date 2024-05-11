@@ -41,7 +41,7 @@ name = "Variable Font Origin";
 value = "4683CC84-822E-4D29-9A51-72FC3DB48604";
 }
 );
-date = "2024-04-24 06:05:27 +0000";
+date = "2024-05-11 08:03:57 +0000";
 familyName = "Funnel Sans";
 featurePrefixes = (
 {
@@ -5088,7 +5088,7 @@ unicode = 302;
 glyphname = J;
 kernLeft = B;
 kernRight = H;
-lastChange = "2024-05-08 14:48:24 +0000";
+lastChange = "2024-05-11 07:59:29 +0000";
 layers = (
 {
 anchors = (
@@ -8329,7 +8329,7 @@ unicode = 80;
 glyphname = Thorn;
 kernLeft = B;
 kernRight = D;
-lastChange = "2024-05-08 14:48:24 +0000";
+lastChange = "2024-05-11 08:02:14 +0000";
 layers = (
 {
 anchors = (
@@ -8395,13 +8395,13 @@ closed = 1;
 nodes = (
 (131,0,l),
 (173,168,l),
-(394,168,ls),
-(554,168,o),
-(679,263,o),
-(716,414,cs),
-(754,566,o),
-(678,660,o),
-(517,660,cs),
+(404,168,ls),
+(561,168,o),
+(677,256,o),
+(714,404,cs),
+(752,559,o),
+(671,660,o),
+(507,660,cs),
 (296,660,l),
 (333,810,l),
 (241,810,l),
@@ -8413,11 +8413,11 @@ closed = 1;
 nodes = (
 (276,580,l),
 (493,580,ls),
-(600,580,o),
-(650,516,o),
+(599,580,o),
+(649,517,o),
 (624,414,cs),
-(599,312,o),
-(517,248,o),
+(598,311,o),
+(516,248,o),
 (410,248,cs),
 (193,248,l)
 );
@@ -8500,13 +8500,13 @@ closed = 1;
 nodes = (
 (199,0,l),
 (237,153,l),
-(404,153,ls),
-(571,153,o),
-(703,255,o),
-(742,414,cs),
-(782,574,o),
-(703,675,o),
-(535,675,cs),
+(414,153,ls),
+(578,153,o),
+(701,248,o),
+(740,404,cs),
+(780,568,o),
+(695,675,o),
+(525,675,cs),
 (368,675,l),
 (401,810,l),
 (217,810,l),
@@ -50825,6 +50825,9 @@ question = 30;
 "@MMK_R_u" = -30;
 "@MMK_R_v" = -20;
 };
+"@MMK_L_parenleft" = {
+"@MMK_R_B" = 60;
+};
 "@MMK_L_period" = {
 "@MMK_R_A" = 20;
 "@MMK_R_C" = -40;
@@ -51313,6 +51316,9 @@ question = 30;
 "@MMK_R_u" = -30;
 "@MMK_R_v" = -20;
 };
+"@MMK_L_parenleft" = {
+"@MMK_R_B" = 60;
+};
 "@MMK_L_period" = {
 "@MMK_R_A" = 20;
 "@MMK_R_C" = -40;
@@ -51542,7 +51548,7 @@ value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
 },
 {
 key = versionString;
-value = "Version 1.000; Beta; Release 2; Build 20";
+value = "Version 1.000; Beta; Release 3; Build 21";
 },
 {
 key = vendorID;
