@@ -955,7 +955,7 @@ unicode = 195;
 glyphname = AE;
 kernLeft = A;
 kernRight = A;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-06-01 10:14:29 +0000";
 layers = (
 {
 anchors = (
@@ -1006,7 +1006,7 @@ com.schriftgestaltung.Glyphs.category = Letter;
 com.schriftgestaltung.Glyphs.script = latin;
 com.schriftgestaltung.Glyphs.subCategory = Uppercase;
 };
-width = 1230;
+width = 1200;
 },
 {
 anchors = (
@@ -1067,7 +1067,7 @@ com.schriftgestaltung.Glyphs.category = Letter;
 com.schriftgestaltung.Glyphs.script = latin;
 com.schriftgestaltung.Glyphs.subCategory = Uppercase;
 };
-width = 1220;
+width = 1190;
 }
 );
 unicode = 198;
@@ -3397,7 +3397,7 @@ unicode = 73;
 glyphname = IJ;
 kernLeft = B;
 kernRight = H;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-05-31 11:31:07 +0000";
 layers = (
 {
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
@@ -3415,7 +3415,7 @@ com.schriftgestaltung.Glyphs.category = Letter;
 com.schriftgestaltung.Glyphs.script = latin;
 com.schriftgestaltung.Glyphs.subCategory = Uppercase;
 };
-width = 720;
+width = 840;
 },
 {
 layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
@@ -3433,7 +3433,7 @@ com.schriftgestaltung.Glyphs.category = Letter;
 com.schriftgestaltung.Glyphs.script = latin;
 com.schriftgestaltung.Glyphs.subCategory = Uppercase;
 };
-width = 620;
+width = 740;
 }
 );
 unicode = 306;
@@ -3757,17 +3757,17 @@ unicode = 302;
 glyphname = J;
 kernLeft = B;
 kernRight = H;
-lastChange = "2024-05-11 07:59:54 +0000";
+lastChange = "2024-05-30 11:31:46 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (164,0);
+pos = (227,0);
 },
 {
 name = top;
-pos = (179,810);
+pos = (299,810);
 }
 );
 background = {
@@ -3775,10 +3775,10 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(274,0,l),
-(274,810,l),
-(86,810,l),
-(86,0,l)
+(394,0,l),
+(394,810,l),
+(206,810,l),
+(206,0,l)
 );
 }
 );
@@ -3788,15 +3788,15 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(126,-210,ls),
-(221,-210,o),
-(274,-164,o),
-(274,-66,cs),
-(274,810,l),
-(86,810,l),
-(86,-60,l),
-(-27,-60,l),
-(-27,-210,l)
+(246,0,ls),
+(341,0,o),
+(394,46,o),
+(394,144,cs),
+(394,810,l),
+(206,810,l),
+(206,164,l),
+(24,164,l),
+(24,0,l)
 );
 }
 );
@@ -3805,7 +3805,42 @@ com.schriftgestaltung.Glyphs.category = Letter;
 com.schriftgestaltung.Glyphs.script = latin;
 com.schriftgestaltung.Glyphs.subCategory = Uppercase;
 };
-width = 360;
+width = 480;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (208,0);
+},
+{
+name = top;
+pos = (275,810);
+}
+);
+layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
+shapes = (
+{
+closed = 1;
+nodes = (
+(229,0,ls),
+(287,0,o),
+(323,30,o),
+(323,90,cs),
+(323,810,l),
+(227,810,l),
+(227,82,l),
+(20,82,l),
+(20,0,l)
+);
+}
+);
+userData = {
+com.schriftgestaltung.Glyphs.category = Letter;
+com.schriftgestaltung.Glyphs.script = latin;
+com.schriftgestaltung.Glyphs.subCategory = Uppercase;
+};
+width = 430;
 },
 {
 anchors = (
@@ -3818,7 +3853,9 @@ name = top;
 pos = (155,810);
 }
 );
-layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
+associatedMasterId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
+layerId = "139C5103-A409-496C-BBE7-26824493295D";
+name = "30 May 24 at 13:23";
 shapes = (
 {
 closed = 1;
@@ -3841,13 +3878,63 @@ com.schriftgestaltung.Glyphs.script = latin;
 com.schriftgestaltung.Glyphs.subCategory = Uppercase;
 };
 width = 310;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (164,0);
+},
+{
+name = top;
+pos = (179,810);
+}
+);
+associatedMasterId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
+background = {
+shapes = (
+{
+closed = 1;
+nodes = (
+(274,0,l),
+(274,810,l),
+(86,810,l),
+(86,0,l)
+);
+}
+);
+};
+layerId = "C8D9FA7C-2BA4-44C6-84AB-E6231CAF34D0";
+name = "30 May 24 at 13:23";
+shapes = (
+{
+closed = 1;
+nodes = (
+(126,-210,ls),
+(221,-210,o),
+(274,-164,o),
+(274,-66,cs),
+(274,810,l),
+(86,810,l),
+(86,-60,l),
+(-27,-60,l),
+(-27,-210,l)
+);
+}
+);
+userData = {
+com.schriftgestaltung.Glyphs.category = Letter;
+com.schriftgestaltung.Glyphs.script = latin;
+com.schriftgestaltung.Glyphs.subCategory = Uppercase;
+};
+width = 360;
 }
 );
 unicode = 74;
 },
 {
 glyphname = Jacute;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-05-31 11:31:07 +0000";
 layers = (
 {
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
@@ -3856,11 +3943,11 @@ shapes = (
 ref = J;
 },
 {
-pos = (-73,210);
+pos = (47,210);
 ref = acutecomb;
 }
 );
-width = 360;
+width = 480;
 },
 {
 layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
@@ -3869,11 +3956,11 @@ shapes = (
 ref = J;
 },
 {
-pos = (-97,210);
+pos = (23,210);
 ref = acutecomb;
 }
 );
-width = 310;
+width = 430;
 }
 );
 },
@@ -4067,7 +4154,7 @@ unicode = 310;
 glyphname = L;
 kernLeft = B;
 kernRight = L;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-05-30 11:25:14 +0000";
 layers = (
 {
 anchors = (
@@ -4134,8 +4221,8 @@ shapes = (
 closed = 1;
 nodes = (
 (650,0,l),
-(650,83,l),
-(200,83,l),
+(650,82,l),
+(200,82,l),
 (200,810,l),
 (104,810,l),
 (104,0,l)
@@ -9217,6 +9304,133 @@ width = 720;
 }
 );
 unicode = 379;
+},
+{
+export = 0;
+glyphname = J.ss01;
+kernLeft = B;
+kernRight = H;
+lastChange = "2024-06-03 06:01:48 +0000";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (88,-180);
+},
+{
+name = top;
+pos = (155,810);
+}
+);
+layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
+name = Light;
+shapes = (
+{
+closed = 1;
+nodes = (
+(109,-180,ls),
+(167,-180,o),
+(203,-150,o),
+(203,-90,cs),
+(203,810,l),
+(107,810,l),
+(107,-100,l),
+(-28,-100,l),
+(-28,-180,l)
+);
+}
+);
+userData = {
+com.schriftgestaltung.Glyphs.category = Letter;
+com.schriftgestaltung.Glyphs.script = latin;
+com.schriftgestaltung.Glyphs.subCategory = Uppercase;
+};
+width = 310;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (164,0);
+},
+{
+name = top;
+pos = (179,810);
+}
+);
+background = {
+shapes = (
+{
+closed = 1;
+nodes = (
+(274,0,l),
+(274,810,l),
+(86,810,l),
+(86,0,l)
+);
+}
+);
+};
+layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
+name = Bold;
+shapes = (
+{
+closed = 1;
+nodes = (
+(126,-210,ls),
+(221,-210,o),
+(274,-164,o),
+(274,-66,cs),
+(274,810,l),
+(86,810,l),
+(86,-60,l),
+(-27,-60,l),
+(-27,-210,l)
+);
+}
+);
+userData = {
+com.schriftgestaltung.Glyphs.category = Letter;
+com.schriftgestaltung.Glyphs.script = latin;
+com.schriftgestaltung.Glyphs.subCategory = Uppercase;
+};
+width = 360;
+}
+);
+},
+{
+export = 0;
+glyphname = Jacute.ss01;
+lastChange = "2024-06-03 06:01:48 +0000";
+layers = (
+{
+layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
+shapes = (
+{
+ref = J.ss01;
+},
+{
+pos = (-73,210);
+ref = acutecomb;
+}
+);
+width = 360;
+},
+{
+layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
+shapes = (
+{
+ref = J.ss01;
+},
+{
+pos = (-97,210);
+ref = acutecomb;
+}
+);
+width = 310;
+}
+);
 },
 {
 glyphname = a;
@@ -38816,11 +39030,9 @@ question = 30;
 "@MMK_R_u" = -30;
 "@MMK_R_v" = -20;
 };
-"@MMK_L_parenleft" = {
-"@MMK_R_B" = 60;
-};
 "@MMK_L_period" = {
 "@MMK_R_A" = 20;
+"@MMK_R_B" = 30;
 "@MMK_R_C" = -40;
 "@MMK_R_S" = -20;
 "@MMK_R_T" = -120;
@@ -39047,7 +39259,7 @@ value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
 },
 {
 key = versionString;
-value = "Version 1.000; Beta; Release 3; Build 21";
+value = "Version 1.000; Beta; Release 4; Build 23";
 },
 {
 key = vendorID;
