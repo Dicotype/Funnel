@@ -1,5 +1,5 @@
 {
-.appVersion = "3151";
+.appVersion = "3309";
 .formatVersion = 3;
 axes = (
 {
@@ -262,6 +262,7 @@ name = underlinePosition;
 value = -120;
 }
 );
+iconName = Light;
 id = "4683CC84-822E-4D29-9A51-72FC3DB48604";
 metricValues = (
 {
@@ -288,7 +289,6 @@ over = -20;
 pos = -240;
 },
 {
-over = -16;
 }
 );
 name = Light;
@@ -366,7 +366,6 @@ over = -20;
 pos = -240;
 },
 {
-over = -16;
 }
 );
 name = Bold;
@@ -3374,7 +3373,7 @@ unicode = 73;
 glyphname = IJ;
 kernLeft = B;
 kernRight = H;
-lastChange = "2024-05-30 11:42:03 +0000";
+lastChange = "2024-07-05 16:55:07 +0000";
 layers = (
 {
 layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
@@ -3410,7 +3409,7 @@ com.schriftgestaltung.Glyphs.category = Letter;
 com.schriftgestaltung.Glyphs.script = latin;
 com.schriftgestaltung.Glyphs.subCategory = Uppercase;
 };
-width = 740;
+width = 860;
 }
 );
 unicode = 306;
@@ -3911,7 +3910,7 @@ unicode = 74;
 },
 {
 glyphname = Jacute;
-lastChange = "2024-05-30 11:42:03 +0000";
+lastChange = "2024-07-05 16:55:11 +0000";
 layers = (
 {
 layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
@@ -3933,11 +3932,11 @@ shapes = (
 ref = J;
 },
 {
-pos = (-67,210);
+pos = (53,210);
 ref = acutecomb;
 }
 );
-width = 370;
+width = 490;
 }
 );
 },
@@ -39089,8 +39088,13 @@ type = "italic angle";
 );
 properties = (
 {
-key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+key = copyrights;
+values = (
+{
+language = dflt;
+value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
+}
+);
 },
 {
 key = licenses;
@@ -39102,21 +39106,16 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 );
 },
 {
-key = copyrights;
-values = (
-{
-language = dflt;
-value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
-}
-);
-},
-{
-key = versionString;
-value = "Version 1.000; Beta; Release 4; Build 23";
+key = licenseURL;
+value = "https://scripts.sil.org/OFL";
 },
 {
 key = vendorID;
 value = DICO;
+},
+{
+key = versionString;
+value = "Version 1.000; Beta; Release 5; Build 24";
 }
 );
 settings = {

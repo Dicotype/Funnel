@@ -1,5 +1,5 @@
 {
-.appVersion = "3151";
+.appVersion = "3309";
 .formatVersion = 3;
 DisplayStrings = (
 "Vielleicht ist der Höhepunkt des luxuriösen Badens im Seifenbad erreicht, eine Anwendung von heißem Wasser und Seife auf den ganzen Körper, unmittelbar gefolgt von einem kalten Sprung oder einem Schwammbad. Ein Bad ist sofort eine Notwendigkeit und ein Luxus, und um die größte Anzahl von Vorteilen einschließlich erhöhter Gesundheit, Appetit, Energie und guten Geistern zu erhalten, ist das Seifenbad das wirksamste und außerdem das angenehmste und am wenigsten probierende zu der schwachen oder überempfindlichen Verfassung."
@@ -272,17 +272,18 @@ locked = 1;
 pos = (0,300);
 },
 {
-orientation = right;
 angle = -104.036;
 locked = 1;
+orientation = right;
 pos = (0,300);
 },
 {
-orientation = center;
 angle = -104.036;
+orientation = center;
 pos = (0,300);
 }
 );
+iconName = Light;
 id = "4683CC84-822E-4D29-9A51-72FC3DB48604";
 metricValues = (
 {
@@ -309,7 +310,6 @@ over = -20;
 pos = -240;
 },
 {
-over = -16;
 pos = 14.036;
 }
 );
@@ -368,13 +368,13 @@ locked = 1;
 pos = (0,300);
 },
 {
-orientation = right;
 angle = -104.036;
+orientation = right;
 pos = (0,300);
 },
 {
-orientation = center;
 angle = -104.036;
+orientation = center;
 pos = (0,300);
 }
 );
@@ -405,7 +405,6 @@ over = -20;
 pos = -240;
 },
 {
-over = -16;
 pos = 14.036;
 }
 );
@@ -4555,7 +4554,7 @@ unicode = 73;
 glyphname = IJ;
 kernLeft = B;
 kernRight = H;
-lastChange = "2024-05-30 11:42:01 +0000";
+lastChange = "2024-07-05 17:10:51 +0000";
 layers = (
 {
 background = {
@@ -4613,7 +4612,7 @@ com.schriftgestaltung.Glyphs.category = Letter;
 com.schriftgestaltung.Glyphs.script = latin;
 com.schriftgestaltung.Glyphs.subCategory = Uppercase;
 };
-width = 740;
+width = 860;
 }
 );
 unicode = 306;
@@ -5376,7 +5375,7 @@ unicode = 74;
 },
 {
 glyphname = Jacute;
-lastChange = "2024-05-30 11:42:01 +0000";
+lastChange = "2024-07-05 17:10:55 +0000";
 layers = (
 {
 background = {
@@ -5420,11 +5419,11 @@ shapes = (
 ref = J;
 },
 {
-pos = (-15,210);
+pos = (105,210);
 ref = acutecomb;
 }
 );
-width = 370;
+width = 490;
 }
 );
 },
@@ -51873,8 +51872,13 @@ type = "italic angle";
 );
 properties = (
 {
-key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+key = copyrights;
+values = (
+{
+language = dflt;
+value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
+}
+);
 },
 {
 key = licenses;
@@ -51886,21 +51890,16 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 );
 },
 {
-key = copyrights;
-values = (
-{
-language = dflt;
-value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
-}
-);
-},
-{
-key = versionString;
-value = "Version 1.000; Beta; Release 4; Build 23";
+key = licenseURL;
+value = "https://scripts.sil.org/OFL";
 },
 {
 key = vendorID;
 value = DICO;
+},
+{
+key = versionString;
+value = "Version 1.000; Beta; Release 5; Build 24";
 }
 );
 settings = {

@@ -1,5 +1,5 @@
 {
-.appVersion = "3151";
+.appVersion = "3309";
 .formatVersion = 3;
 axes = (
 {
@@ -262,6 +262,7 @@ name = underlinePosition;
 value = -120;
 }
 );
+iconName = Light;
 id = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
 metricValues = (
 {
@@ -288,7 +289,6 @@ over = -20;
 pos = -240;
 },
 {
-over = -16;
 }
 );
 name = Light;
@@ -366,7 +366,6 @@ over = -20;
 pos = -240;
 },
 {
-over = -16;
 }
 );
 name = Bold;
@@ -39236,8 +39235,13 @@ type = "italic angle";
 );
 properties = (
 {
-key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+key = copyrights;
+values = (
+{
+language = dflt;
+value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
+}
+);
 },
 {
 key = licenses;
@@ -39249,21 +39253,16 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 );
 },
 {
-key = copyrights;
-values = (
-{
-language = dflt;
-value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
-}
-);
-},
-{
-key = versionString;
-value = "Version 1.000; Beta; Release 4; Build 23";
+key = licenseURL;
+value = "https://scripts.sil.org/OFL";
 },
 {
 key = vendorID;
 value = DICO;
+},
+{
+key = versionString;
+value = "Version 1.000; Beta; Release 5; Build 24";
 }
 );
 settings = {
