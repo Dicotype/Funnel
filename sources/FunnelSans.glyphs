@@ -2,7 +2,7 @@
 .appVersion = "3316";
 .formatVersion = 3;
 DisplayStrings = (
-"˛"
+"̨ą/ogonekcomb.e ˛"
 );
 axes = (
 {
@@ -38019,22 +38019,66 @@ unicode = 184;
 },
 {
 glyphname = ogonek;
-lastChange = "2024-05-06 18:20:58 +0000";
+lastChange = "2024-09-25 11:32:29 +0000";
 layers = (
 {
+anchors = (
+{
+name = _ogonek;
+pos = (363,0);
+}
+);
 layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
 shapes = (
 {
-ref = ogonekcomb;
+closed = 1;
+nodes = (
+(390,-240,l),
+(390,-174,l),
+(280,-174,l),
+(280,-150,ls),
+(280,-88,o),
+(307,-47,o),
+(363,0,c),
+(313,16,l),
+(259,-18,o),
+(204,-82,o),
+(204,-150,cs),
+(204,-208,o),
+(233,-240,o),
+(294,-240,cs)
+);
 }
 );
 width = 600;
 },
 {
+anchors = (
+{
+name = _ogonek;
+pos = (413,0);
+}
+);
 layerId = "FB8C5FF2-3B42-4CDF-AA26-B13980DDC748";
 shapes = (
 {
-ref = ogonekcomb;
+closed = 1;
+nodes = (
+(434,-240,l),
+(434,-108,l),
+(342,-108,l),
+(342,-96,ls),
+(342,-59,o),
+(369,-30,o),
+(413,0,c),
+(300,36,l),
+(232,-6,o),
+(174,-70,o),
+(174,-141,cs),
+(174,-204,o),
+(207,-240,o),
+(276,-240,cs)
+);
 }
 );
 width = 600;

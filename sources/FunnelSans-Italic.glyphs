@@ -2,7 +2,8 @@
 .appVersion = "3316";
 .formatVersion = 3;
 DisplayStrings = (
-"Vielleicht ist der Höhepunkt des luxuriösen Badens im Seifenbad erreicht, eine Anwendung von heißem Wasser und Seife auf den ganzen Körper, unmittelbar gefolgt von einem kalten Sprung oder einem Schwammbad. Ein Bad ist sofort eine Notwendigkeit und ein Luxus, und um die größte Anzahl von Vorteilen einschließlich erhöhter Gesundheit, Appetit, Energie und guten Geistern zu erhalten, ist das Seifenbad das wirksamste und außerdem das angenehmste und am wenigsten probierende zu der schwachen oder überempfindlichen Verfassung."
+"Vielleicht ist der Höhepunkt des luxuriösen Badens im Seifenbad erreicht, eine Anwendung von heißem Wasser und Seife auf den ganzen Körper, unmittelbar gefolgt von einem kalten Sprung oder einem Schwammbad. Ein Bad ist sofort eine Notwendigkeit und ein Luxus, und um die größte Anzahl von Vorteilen einschließlich erhöhter Gesundheit, Appetit, Energie und guten Geistern zu erhalten, ist das Seifenbad das wirksamste und außerdem das angenehmste und am wenigsten probierende zu der schwachen oder überempfindlichen Verfassung.",
+"˛"
 );
 axes = (
 {
@@ -50771,9 +50772,15 @@ unicode = 184;
 },
 {
 glyphname = ogonek;
-lastChange = "2024-05-08 14:48:24 +0000";
+lastChange = "2024-09-25 11:36:26 +0000";
 layers = (
 {
+anchors = (
+{
+name = _ogonek;
+pos = (288,0);
+}
+);
 background = {
 shapes = (
 {
@@ -50784,12 +50791,34 @@ ref = ogonekcomb;
 layerId = "4683CC84-822E-4D29-9A51-72FC3DB48604";
 shapes = (
 {
-ref = ogonekcomb;
+closed = 1;
+nodes = (
+(255,-240,l),
+(272,-174,l),
+(162,-174,l),
+(168,-150,ls),
+(183,-88,o),
+(220,-47,o),
+(288,0,c),
+(242,16,l),
+(180,-18,o),
+(109,-82,o),
+(92,-150,cs),
+(77,-208,o),
+(98,-240,o),
+(159,-240,cs)
+);
 }
 );
 width = 600;
 },
 {
+anchors = (
+{
+name = _ogonek;
+pos = (338,0);
+}
+);
 background = {
 shapes = (
 {
@@ -50800,7 +50829,23 @@ ref = ogonekcomb;
 layerId = "FB8C5FF2-3B42-4CDF-AA26-B13980DDC748";
 shapes = (
 {
-ref = ogonekcomb;
+closed = 1;
+nodes = (
+(299,-240,l),
+(332,-108,l),
+(240,-108,l),
+(243,-96,ls),
+(252,-59,o),
+(287,-30,o),
+(338,0,c),
+(234,36,l),
+(156,-6,o),
+(82,-70,o),
+(64,-141,cs),
+(48,-204,o),
+(72,-240,o),
+(141,-240,cs)
+);
 }
 );
 width = 600;
