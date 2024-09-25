@@ -1,6 +1,9 @@
 {
 .appVersion = "3316";
 .formatVersion = 3;
+DisplayStrings = (
+"/nbspace"
+);
 axes = (
 {
 name = Weight;
@@ -28677,7 +28680,7 @@ unicode = 32;
 },
 {
 glyphname = nbspace;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-09-25 08:45:40 +0000";
 layers = (
 {
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
@@ -28685,7 +28688,7 @@ userData = {
 com.schriftgestaltung.Glyphs.category = Separator;
 com.schriftgestaltung.Glyphs.subCategory = Space;
 };
-width = 292;
+width = 280;
 },
 {
 layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
@@ -28693,9 +28696,10 @@ userData = {
 com.schriftgestaltung.Glyphs.category = Separator;
 com.schriftgestaltung.Glyphs.subCategory = Space;
 };
-width = 292;
+width = 300;
 }
 );
+metricWidth = space;
 unicode = 160;
 },
 {
