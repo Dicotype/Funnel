@@ -1,9 +1,6 @@
 {
 .appVersion = "3316";
 .formatVersion = 3;
-DisplayStrings = (
-"/nbspace"
-);
 axes = (
 {
 name = Weight;
@@ -19726,9 +19723,15 @@ unicode = 380;
 glyphname = f_f;
 kernLeft = f;
 kernRight = f;
-lastChange = "2024-05-09 09:41:33 +0000";
+lastChange = "2024-09-25 08:47:02 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+pos = (410,0);
+}
+);
 layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
 shapes = (
 {
@@ -19770,6 +19773,12 @@ nodes = (
 width = 820;
 },
 {
+anchors = (
+{
+name = caret_1;
+pos = (450,0);
+}
+);
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
 shapes = (
 {
@@ -19818,9 +19827,15 @@ metricRight = f;
 glyphname = fi;
 kernLeft = f;
 kernRight = d;
-lastChange = "2024-05-09 09:41:31 +0000";
+lastChange = "2024-09-25 08:47:02 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+pos = (345,0);
+}
+);
 layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
 shapes = (
 {
@@ -19834,6 +19849,12 @@ ref = i;
 width = 690;
 },
 {
+anchors = (
+{
+name = caret_1;
+pos = (380,0);
+}
+);
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
 shapes = (
 {
@@ -19855,9 +19876,15 @@ unicode = 64257;
 glyphname = fl;
 kernLeft = f;
 kernRight = d;
-lastChange = "2024-05-09 09:41:29 +0000";
+lastChange = "2024-09-25 08:47:02 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+pos = (345,0);
+}
+);
 layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
 shapes = (
 {
@@ -19871,6 +19898,12 @@ ref = l;
 width = 690;
 },
 {
+anchors = (
+{
+name = caret_1;
+pos = (380,0);
+}
+);
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
 shapes = (
 {
