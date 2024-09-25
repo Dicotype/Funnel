@@ -13,7 +13,7 @@ tag = wght;
 classes = (
 {
 automatic = 1;
-code = "A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I IJ Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde Eng O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcommaaccent U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent";
+code = "A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Dcaron Dcroat Eth E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I IJ Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde Eng O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcommaaccent U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent";
 name = Uppercase;
 }
 );
@@ -28,20 +28,21 @@ name = "Use Typo Metrics";
 value = 1;
 },
 {
+name = "Variable Font Origin";
+value = "4683CC84-822E-4D29-9A51-72FC3DB48604";
+},
+{
 name = "Axis Mappings";
 value = {
 wght = {
 300 = 90;
 400 = 108;
 500 = 132;
+600 = 145;
 700 = 162;
 800 = 180;
 };
 };
-},
-{
-name = "Variable Font Origin";
-value = "4683CC84-822E-4D29-9A51-72FC3DB48604";
 }
 );
 date = "2024-05-11 08:03:57 +0000";
@@ -80,11 +81,15 @@ tag = aalt;
 },
 {
 automatic = 1;
-code = "lookup ccmp_Other_1 {
+code = "lookup ccmp_DFLT_1 {
 	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	@CombiningNonTopAccents = [cedillacomb ogonekcomb];
-	sub [i j]' @CombiningTopAccents by [idotless jdotless];
-	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_DFLT_1;
+
+lookup ccmp_Other_1 {
+	lookupflag 0;
 	@Markscomb = [ringcomb];
 	@MarkscombCase = [ringcomb.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
@@ -92,11 +97,13 @@ code = "lookup ccmp_Other_1 {
 } ccmp_Other_1;
 
 lookup ccmp_Other_2 {
+	lookupflag 0;
 	sub @Markscomb' @MarkscombCase by @MarkscombCase;
 	sub @MarkscombCase @Markscomb' by @MarkscombCase;
 } ccmp_Other_2;
 
 lookup ccmp_latn_1 {
+	lookupflag 0;
 	sub fi by f i;
 	sub fl by f l;
 } ccmp_latn_1;
@@ -108,40 +115,39 @@ tag = ccmp;
 },
 {
 automatic = 1;
-code = "lookup locl_latn_0 {
-	script latn;
-	language AZE;
-	sub i by idotaccent;
-	language CRT;
-	sub i by idotaccent;
-	language KAZ;
-	sub i by idotaccent;
-	language TAT;
-	sub i by idotaccent;
-	language TRK;
+code = "script latn;
+language AZE;
+lookup locl_latn_0 {
 	sub i by idotaccent;
 } locl_latn_0;
+language CRT;
+lookup locl_latn_0;
+language KAZ;
+lookup locl_latn_0;
+language TAT;
+lookup locl_latn_0;
+language TRK;
+lookup locl_latn_0;
 
+script latn;
+language ROM;
 lookup locl_latn_1 {
-	script latn;
-	language ROM;
-	sub Scedilla by Scommaaccent;
-	sub scedilla by scommaaccent;
-	language MOL;
 	sub Scedilla by Scommaaccent;
 	sub scedilla by scommaaccent;
 } locl_latn_1;
+language MOL;
+lookup locl_latn_1;
 
+script latn;
+language CAT;
 lookup locl_latn_2 {
-	script latn;
-	language CAT;
 	sub l periodcentered' l by periodcentered.loclCAT;
 	sub L periodcentered' L by periodcentered.loclCAT.case;
 } locl_latn_2;
 
+script latn;
+language NLD;
 lookup locl_latn_3 {
-	script latn;
-	language NLD;
 	sub iacute j' by jacute;
 	sub Iacute J' by Jacute;
 } locl_latn_3;
@@ -242,7 +248,7 @@ value = 1200;
 },
 {
 name = winDescent;
-value = 300;
+value = 330;
 },
 {
 name = hheaAscender;
@@ -338,7 +344,7 @@ value = 1200;
 },
 {
 name = winDescent;
-value = 300;
+value = 330;
 },
 {
 name = hheaAscender;
@@ -50837,6 +50843,18 @@ instanceInterpolations = {
 isItalic = 1;
 name = "Medium Italic";
 weightClass = 500;
+},
+{
+axesValues = (
+145
+);
+instanceInterpolations = {
+"4683CC84-822E-4D29-9A51-72FC3DB48604" = 0.38889;
+"FB8C5FF2-3B42-4CDF-AA26-B13980DDC748" = 0.61111;
+};
+isItalic = 1;
+name = "SemiBold Italic";
+weightClass = 600;
 },
 {
 axesValues = (

@@ -1,6 +1,9 @@
 {
 .appVersion = "3316";
 .formatVersion = 3;
+DisplayStrings = (
+"˛"
+);
 axes = (
 {
 name = Weight;
@@ -31,6 +34,7 @@ wght = {
 300 = 90;
 400 = 108;
 500 = 132;
+600 = 145;
 700 = 162;
 800 = 180;
 };
@@ -239,7 +243,7 @@ value = 1200;
 },
 {
 name = winDescent;
-value = 300;
+value = 330;
 },
 {
 name = hheaAscender;
@@ -292,6 +296,7 @@ pos = -240;
 }
 );
 name = Light;
+visible = 1;
 },
 {
 axesValues = (
@@ -316,7 +321,7 @@ value = 1200;
 },
 {
 name = winDescent;
-value = 300;
+value = 330;
 },
 {
 name = hheaAscender;
@@ -38072,12 +38077,24 @@ weightClass = 500;
 },
 {
 axesValues = (
+145
+);
+instanceInterpolations = {
+"4683CC84-822E-4D29-9A51-72FC3DB48604" = 0.38889;
+"FB8C5FF2-3B42-4CDF-AA26-B13980DDC748" = 0.61111;
+};
+name = SemiBold;
+weightClass = 600;
+},
+{
+axesValues = (
 162
 );
 instanceInterpolations = {
 "4683CC84-822E-4D29-9A51-72FC3DB48604" = 0.2;
 "FB8C5FF2-3B42-4CDF-AA26-B13980DDC748" = 0.8;
 };
+isBold = 1;
 name = Bold;
 weightClass = 700;
 },

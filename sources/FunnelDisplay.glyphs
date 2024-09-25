@@ -31,6 +31,7 @@ wght = {
 300 = 90;
 400 = 108;
 500 = 132;
+600 = 145;
 700 = 162;
 800 = 180;
 };
@@ -38223,12 +38224,24 @@ weightClass = 500;
 },
 {
 axesValues = (
+145
+);
+instanceInterpolations = {
+"3CBDEB72-8799-4680-B3B3-51A575E4F961" = 0.61111;
+"A931EBE4-BC38-4F2A-894C-3FB7E511A35E" = 0.38889;
+};
+name = SemiBold;
+weightClass = 600;
+},
+{
+axesValues = (
 162
 );
 instanceInterpolations = {
 "3CBDEB72-8799-4680-B3B3-51A575E4F961" = 0.8;
 "A931EBE4-BC38-4F2A-894C-3FB7E511A35E" = 0.2;
 };
+isBold = 1;
 name = Bold;
 weightClass = 700;
 },
