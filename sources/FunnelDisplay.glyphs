@@ -1,14 +1,6 @@
 {
 .appVersion = "3316";
 .formatVersion = 3;
-DisplayStrings = (
-"L/periodcentered.loclCAT.case LL 
-parl/periodcentered.loclCAT lel
-L·L l·l
-
-
-d² m³"
-);
 axes = (
 {
 name = Weight;

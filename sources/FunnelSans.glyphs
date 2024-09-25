@@ -1,5 +1,5 @@
 {
-.appVersion = "3309";
+.appVersion = "3316";
 .formatVersion = 3;
 axes = (
 {
@@ -39097,25 +39097,51 @@ value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
 );
 },
 {
+key = designers;
+values = (
+{
+language = dflt;
+value = "Kristian Moeller";
+},
+{
+language = SVE;
+value = "Kristian Möller";
+}
+);
+},
+{
+key = designerURL;
+value = "https://www.ktkm.se";
+},
+{
 key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
 key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+value = "https://openfontlicense.org";
+},
+{
+key = manufacturers;
+values = (
+{
+language = dflt;
+value = Dicotype;
+}
+);
+},
+{
+key = manufacturerURL;
+value = "https://www.dicotype.com";
 },
 {
 key = vendorID;
 value = DICO;
-},
-{
-key = versionString;
-value = "Version 1.000; Beta; Release 5; Build 24";
 }
 );
 settings = {
