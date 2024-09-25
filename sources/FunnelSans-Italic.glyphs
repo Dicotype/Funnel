@@ -51937,7 +51937,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
+value = "Copyright 2023 The Funnel Project Authors (https://github.com/Dicotype/Funnel)";
 }
 );
 },
@@ -51963,7 +51963,7 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },

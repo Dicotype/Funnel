@@ -1,9 +1,6 @@
 {
 .appVersion = "3316";
 .formatVersion = 3;
-DisplayStrings = (
-"̨ą/ogonekcomb.e ˛"
-);
 axes = (
 {
 name = Weight;
@@ -39165,7 +39162,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
+value = "Copyright 2023 The Funnel Project Authors (https://github.com/Dicotype/Funnel)";
 }
 );
 },
