@@ -1,5 +1,5 @@
 {
-.appVersion = "3309";
+.appVersion = "3316";
 .formatVersion = 3;
 axes = (
 {
@@ -77,11 +77,15 @@ tag = aalt;
 },
 {
 automatic = 1;
-code = "lookup ccmp_Other_1 {
+code = "lookup ccmp_DFLT_1 {
 	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	@CombiningNonTopAccents = [cedillacomb ogonekcomb];
-	sub [i j]' @CombiningTopAccents by [idotless jdotless];
-	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_DFLT_1;
+
+lookup ccmp_Other_1 {
+	lookupflag 0;
 	@Markscomb = [ringcomb];
 	@MarkscombCase = [ringcomb.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
@@ -89,11 +93,13 @@ code = "lookup ccmp_Other_1 {
 } ccmp_Other_1;
 
 lookup ccmp_Other_2 {
+	lookupflag 0;
 	sub @Markscomb' @MarkscombCase by @MarkscombCase;
 	sub @MarkscombCase @Markscomb' by @MarkscombCase;
 } ccmp_Other_2;
 
 lookup ccmp_latn_1 {
+	lookupflag 0;
 	sub fi by f i;
 	sub fl by f l;
 } ccmp_latn_1;
@@ -105,40 +111,39 @@ tag = ccmp;
 },
 {
 automatic = 1;
-code = "lookup locl_latn_0 {
-	script latn;
-	language AZE;
-	sub i by idotaccent;
-	language CRT;
-	sub i by idotaccent;
-	language KAZ;
-	sub i by idotaccent;
-	language TAT;
-	sub i by idotaccent;
-	language TRK;
+code = "script latn;
+language AZE;
+lookup locl_latn_0 {
 	sub i by idotaccent;
 } locl_latn_0;
+language CRT;
+lookup locl_latn_0;
+language KAZ;
+lookup locl_latn_0;
+language TAT;
+lookup locl_latn_0;
+language TRK;
+lookup locl_latn_0;
 
+script latn;
+language ROM;
 lookup locl_latn_1 {
-	script latn;
-	language ROM;
-	sub Scedilla by Scommaaccent;
-	sub scedilla by scommaaccent;
-	language MOL;
 	sub Scedilla by Scommaaccent;
 	sub scedilla by scommaaccent;
 } locl_latn_1;
+language MOL;
+lookup locl_latn_1;
 
+script latn;
+language CAT;
 lookup locl_latn_2 {
-	script latn;
-	language CAT;
 	sub l periodcentered' l by periodcentered.loclCAT;
 	sub L periodcentered' L by periodcentered.loclCAT.case;
 } locl_latn_2;
 
+script latn;
+language NLD;
 lookup locl_latn_3 {
-	script latn;
-	language NLD;
 	sub iacute j' by jacute;
 	sub Iacute J' by Jacute;
 } locl_latn_3;
@@ -24322,7 +24327,7 @@ unicode = 8260;
 },
 {
 glyphname = onehalf;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-09-25 08:41:26 +0000";
 layers = (
 {
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
@@ -24340,7 +24345,7 @@ pos = (600,0);
 ref = two.dnom;
 }
 );
-width = 1080;
+width = 1162;
 },
 {
 layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
@@ -24358,7 +24363,7 @@ pos = (540,0);
 ref = two.dnom;
 }
 );
-width = 1020;
+width = 1108;
 }
 );
 metricLeft = one.numr;
@@ -24367,7 +24372,7 @@ unicode = 189;
 },
 {
 glyphname = onequarter;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-09-25 08:41:26 +0000";
 layers = (
 {
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
@@ -24385,7 +24390,7 @@ pos = (600,0);
 ref = four.dnom;
 }
 );
-width = 1080;
+width = 1183;
 },
 {
 layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
@@ -24403,7 +24408,7 @@ pos = (540,0);
 ref = four.dnom;
 }
 );
-width = 1020;
+width = 1133;
 }
 );
 metricLeft = one.numr;
@@ -24412,7 +24417,7 @@ unicode = 188;
 },
 {
 glyphname = threequarters;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-09-25 08:41:26 +0000";
 layers = (
 {
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
@@ -24430,7 +24435,7 @@ pos = (600,0);
 ref = four.dnom;
 }
 );
-width = 1080;
+width = 1090;
 },
 {
 layerId = "A931EBE4-BC38-4F2A-894C-3FB7E511A35E";
@@ -24448,7 +24453,7 @@ pos = (540,0);
 ref = four.dnom;
 }
 );
-width = 1020;
+width = 1040;
 }
 );
 metricLeft = three.numr;
@@ -28508,7 +28513,7 @@ source = nine;
 },
 {
 glyphname = onesuperior;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-09-25 08:41:26 +0000";
 layers = (
 {
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
@@ -28537,7 +28542,7 @@ unicode = 185;
 },
 {
 glyphname = twosuperior;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-09-25 08:41:26 +0000";
 layers = (
 {
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
@@ -28566,7 +28571,7 @@ unicode = 178;
 },
 {
 glyphname = threesuperior;
-lastChange = "2024-05-08 12:15:40 +0000";
+lastChange = "2024-09-25 08:41:26 +0000";
 layers = (
 {
 layerId = "3CBDEB72-8799-4680-B3B3-51A575E4F961";
@@ -39244,25 +39249,51 @@ value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
 );
 },
 {
+key = designers;
+values = (
+{
+language = dflt;
+value = "Kristian Moeller";
+},
+{
+language = SVE;
+value = "Kristian Möller";
+}
+);
+},
+{
+key = designerURL;
+value = "https://www.ktkm.se";
+},
+{
 key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
 key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+value = "https://openfontlicense.org";
+},
+{
+key = manufacturers;
+values = (
+{
+language = dflt;
+value = Dicotype;
+}
+);
+},
+{
+key = manufacturerURL;
+value = "https://www.dicotype.com";
 },
 {
 key = vendorID;
 value = DICO;
-},
-{
-key = versionString;
-value = "Version 1.000; Beta; Release 5; Build 24";
 }
 );
 settings = {
