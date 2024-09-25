@@ -39327,11 +39327,11 @@ key = designers;
 values = (
 {
 language = dflt;
-value = "Kristian Moeller";
+value = "NORD ID, Kristian Moeller";
 },
 {
 language = SVE;
-value = "Kristian Möller";
+value = "NORD ID, Kristian Möller";
 }
 );
 },

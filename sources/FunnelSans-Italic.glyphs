@@ -1,10 +1,6 @@
 {
 .appVersion = "3316";
 .formatVersion = 3;
-DisplayStrings = (
-"Vielleicht ist der Höhepunkt des luxuriösen Badens im Seifenbad erreicht, eine Anwendung von heißem Wasser und Seife auf den ganzen Körper, unmittelbar gefolgt von einem kalten Sprung oder einem Schwammbad. Ein Bad ist sofort eine Notwendigkeit und ein Luxus, und um die größte Anzahl von Vorteilen einschließlich erhöhter Gesundheit, Appetit, Energie und guten Geistern zu erhalten, ist das Seifenbad das wirksamste und außerdem das angenehmste und am wenigsten probierende zu der schwachen oder überempfindlichen Verfassung.",
-"˛"
-);
 axes = (
 {
 name = Weight;
@@ -51946,11 +51942,11 @@ key = designers;
 values = (
 {
 language = dflt;
-value = "Kristian Moeller";
+value = "NORD ID, Kristian Moeller";
 },
 {
 language = SVE;
-value = "Kristian Möller";
+value = "NORD ID, Kristian Möller";
 }
 );
 },
