@@ -2,7 +2,8 @@
 .appVersion = "3316";
 .formatVersion = 3;
 DisplayStrings = (
-"Vielleicht ist der Höhepunkt des luxuriösen Badens im Seifenbad erreicht, eine Anwendung von heißem Wasser und Seife auf den ganzen Körper, unmittelbar gefolgt von einem kalten Sprung oder einem Schwammbad. Ein Bad ist sofort eine Notwendigkeit und ein Luxus, und um die größte Anzahl von Vorteilen einschließlich erhöhter Gesundheit, Appetit, Energie und guten Geistern zu erhalten, ist das Seifenbad das wirksamste und außerdem das angenehmste und am wenigsten probierende zu der schwachen oder überempfindlichen Verfassung."
+"Vielleicht ist der Höhepunkt des luxuriösen Badens im Seifenbad erreicht, eine Anwendung von heißem Wasser und Seife auf den ganzen Körper, unmittelbar gefolgt von einem kalten Sprung oder einem Schwammbad. Ein Bad ist sofort eine Notwendigkeit und ein Luxus, und um die größte Anzahl von Vorteilen einschließlich erhöhter Gesundheit, Appetit, Energie und guten Geistern zu erhalten, ist das Seifenbad das wirksamste und außerdem das angenehmste und am wenigsten probierende zu der schwachen oder überempfindlichen Verfassung.",
+"…"
 );
 axes = (
 {
@@ -37756,7 +37757,7 @@ unicode = 59;
 glyphname = ellipsis;
 kernLeft = period;
 kernRight = period;
-lastChange = "2024-05-08 19:28:01 +0000";
+lastChange = "2024-09-25 09:19:27 +0000";
 layers = (
 {
 background = {
@@ -37819,18 +37820,18 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(566,-12,o),
-(598,14,o),
-(607,49,cs),
-(618,92,o),
-(593,126,o),
-(549,126,cs),
-(511,126,o),
-(478,100,o),
-(471,65,cs),
-(462,23,o),
-(490,-12,o),
-(531,-12,cs)
+(971,-12,o),
+(1003,14,o),
+(1012,49,cs),
+(1023,92,o),
+(998,126,o),
+(954,126,cs),
+(916,126,o),
+(883,100,o),
+(876,65,cs),
+(867,23,o),
+(895,-12,o),
+(936,-12,cs)
 );
 },
 {
@@ -37853,18 +37854,18 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(971,-12,o),
-(1003,14,o),
-(1012,49,cs),
-(1023,92,o),
-(998,126,o),
-(954,126,cs),
-(916,126,o),
-(883,100,o),
-(876,65,cs),
-(867,23,o),
-(895,-12,o),
-(936,-12,cs)
+(566,-12,o),
+(598,14,o),
+(607,49,cs),
+(618,92,o),
+(593,126,o),
+(549,126,cs),
+(511,126,o),
+(478,100,o),
+(471,65,cs),
+(462,23,o),
+(490,-12,o),
+(531,-12,cs)
 );
 }
 );
