@@ -1,6 +1,6 @@
 # Funnel & Funnel Display
 
-Funnel Sans and Funnel Display are modern sans-serifs with both clarity and character, originally developed by NORD ID and Kristian Möller for Funnel. The typefaces are inspired by the movement and shapes of data points. Funnel Sans is a functional yet personal sans serif with both square and circular shapes in the letterforms. In Funnel Display some parts of the stem is shifted, to enhance the sense of movement even more.
+Funnel Sans and Funnel Display are modern sans-serif typefaces with both clarity and character, originally developed by NORD ID and Kristian Möller for Funnel. The typefaces are inspired by the movement and shapes of data points. Funnel Sans is a functional yet personal sans-serif, featuring both square and circular shapes in its letterforms. In Funnel Display, certain parts of the stems are shifted to further enhance the sense of movement.
 
 To contribute, please see (https://github.com/Dicotype/Funnel).
 
