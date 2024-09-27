@@ -1,9 +1,6 @@
 {
 .appVersion = "3316";
 .formatVersion = 3;
-DisplayStrings = (
-"˛"
-);
 axes = (
 {
 name = Weight;
@@ -39321,7 +39318,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2023 The Funnel Project Authors (https://github.com/Funnel)";
+value = "Copyright 2023 The Funnel Project Authors (https://github.com/Dicotype/Funnel)";
 }
 );
 },
@@ -39330,11 +39327,11 @@ key = designers;
 values = (
 {
 language = dflt;
-value = "Kristian Moeller";
+value = "NORD ID, Kristian Moeller";
 },
 {
 language = SVE;
-value = "Kristian Möller";
+value = "NORD ID, Kristian Möller";
 }
 );
 },
