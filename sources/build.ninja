@@ -1,0 +1,359 @@
+# buildVariable: Build a variable font from a source file
+rule buildVariable
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o variable $
+      $fontmake_type $in $args $stamp
+  description = buildVariable
+
+# fix: Run gftools-fix
+rule fix
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner gftools-fix-font -o $out $args $in $stamp
+  description = fix
+
+# buildStat: Build a STAT table from one or more source files
+rule buildSTAT-operation
+  command = gftools-gen-stat --out $tempdir $args -- $in && mv $finalfile $
+      $out $stamp
+rule buildSTAT-postprocess
+  command = gftools-gen-stat --inplace $args -- $in $stamp
+
+# compress: Compress to webfont
+rule compress
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fonttools ttLib.woff2 compress -o $out $in $
+      $stamp
+  description = compress
+
+# instantiateUfo: Create instance UFOs from a Glyphs or designspace file
+rule instantiateUfo
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fontmake -i "$instance_name" -o ufo $
+      $fontmake_type $in $args $stamp
+  description = instantiateUfo
+
+# buildTTF: Build a TTF from a source file
+rule buildTTF
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o ttf $
+      $fontmake_type $in $args $stamp
+  description = buildTTF
+
+# autohint: Run gftools-autohint
+rule autohint
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner gftools-autohint $args -o $out $in $stamp
+  description = autohint
+
+# buildOTF: Build a OTF from a source file
+rule buildOTF
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o otf $
+      $fontmake_type $in $args $stamp
+  description = buildOTF
+
+# copy: Copy a file
+rule copy
+  command = /usr/local/opt/python@3.11/bin/python3.11 -m $
+      gftools.builder.jobrunner cp $in $out $stamp
+  description = copy
+
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpzxsukg_9
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpzxsukg_9: $
+    buildVariable FunnelDisplay.glyphs
+  operation = buildVariable
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+# Generating instance_ufos/FunnelDisplay-Light.ufo.json
+build instance_ufos/FunnelDisplay-Light.ufo.json: instantiateUfo $
+    FunnelDisplay.glyphs
+  operation = instantiateUfo
+  instance_name = Funnel Display Light
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/FunnelDisplay-Regular.ufo.json
+build instance_ufos/FunnelDisplay-Regular.ufo.json: instantiateUfo $
+    FunnelDisplay.glyphs
+  operation = instantiateUfo
+  instance_name = Funnel Display Regular
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/FunnelDisplay-Medium.ufo.json
+build instance_ufos/FunnelDisplay-Medium.ufo.json: instantiateUfo $
+    FunnelDisplay.glyphs
+  operation = instantiateUfo
+  instance_name = Funnel Display Medium
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/FunnelDisplay-SemiBold.ufo.json
+build instance_ufos/FunnelDisplay-SemiBold.ufo.json: instantiateUfo $
+    FunnelDisplay.glyphs
+  operation = instantiateUfo
+  instance_name = Funnel Display SemiBold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/FunnelDisplay-Bold.ufo.json
+build instance_ufos/FunnelDisplay-Bold.ufo.json: instantiateUfo $
+    FunnelDisplay.glyphs
+  operation = instantiateUfo
+  instance_name = Funnel Display Bold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/FunnelDisplay-ExtraBold.ufo.json
+build instance_ufos/FunnelDisplay-ExtraBold.ufo.json: instantiateUfo $
+    FunnelDisplay.glyphs
+  operation = instantiateUfo
+  instance_name = Funnel Display ExtraBold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Postprocessing  with BuildSTAT
+build $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp0f58uh4l.buildStatstamp: $
+    buildSTAT-postprocess $
+    ../fonts/Funnel_Display/variable/FunnelDisplay[wght].ttf
+  stamp =  && touch $
+      /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp0f58uh4l.buildStatstamp
+  postprocess = buildStat
+  args = --src /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpqwgxhlh1
+# Generating ../fonts/Funnel_Display/webfonts/FunnelDisplay[wght].woff2
+build ../fonts/Funnel_Display/webfonts/FunnelDisplay[wght].woff2: compress $
+    ../fonts/Funnel_Display/variable/FunnelDisplay[wght].ttf
+  operation = compress
+# Generating ../fonts/Funnel_Display/webfonts/FunnelDisplay-Light.woff2
+build ../fonts/Funnel_Display/webfonts/FunnelDisplay-Light.woff2: compress $
+    ../fonts/Funnel_Display/ttf/FunnelDisplay-Light.ttf
+  operation = compress
+# Generating ../fonts/Funnel_Display/webfonts/FunnelDisplay-Regular.woff2
+build ../fonts/Funnel_Display/webfonts/FunnelDisplay-Regular.woff2: $
+    compress ../fonts/Funnel_Display/ttf/FunnelDisplay-Regular.ttf
+  operation = compress
+# Generating ../fonts/Funnel_Display/webfonts/FunnelDisplay-Medium.woff2
+build ../fonts/Funnel_Display/webfonts/FunnelDisplay-Medium.woff2: compress $
+    ../fonts/Funnel_Display/ttf/FunnelDisplay-Medium.ttf
+  operation = compress
+# Generating ../fonts/Funnel_Display/webfonts/FunnelDisplay-SemiBold.woff2
+build ../fonts/Funnel_Display/webfonts/FunnelDisplay-SemiBold.woff2: $
+    compress ../fonts/Funnel_Display/ttf/FunnelDisplay-SemiBold.ttf
+  operation = compress
+# Generating ../fonts/Funnel_Display/webfonts/FunnelDisplay-Bold.woff2
+build ../fonts/Funnel_Display/webfonts/FunnelDisplay-Bold.woff2: compress $
+    ../fonts/Funnel_Display/ttf/FunnelDisplay-Bold.ttf
+  operation = compress
+# Generating ../fonts/Funnel_Display/webfonts/FunnelDisplay-ExtraBold.woff2
+build ../fonts/Funnel_Display/webfonts/FunnelDisplay-ExtraBold.woff2: $
+    compress ../fonts/Funnel_Display/ttf/FunnelDisplay-ExtraBold.ttf
+  operation = compress
+# Generating ../fonts/Funnel_Display/variable/FunnelDisplay[wght].ttf
+build ../fonts/Funnel_Display/variable/FunnelDisplay[wght].ttf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpzxsukg_9
+  operation = fix
+  args = 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp0y1i83wb
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp0y1i83wb: $
+    buildTTF instance_ufos/FunnelDisplay-Light.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpmouaezqg
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpmouaezqg: $
+    buildOTF instance_ufos/FunnelDisplay-Light.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpkpxm8v4g
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpkpxm8v4g: $
+    autohint /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp0y1i83wb
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/Funnel_Display/ttf/FunnelDisplay-Light.ttf
+build ../fonts/Funnel_Display/ttf/FunnelDisplay-Light.ttf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpkpxm8v4g
+  operation = fix
+  args = 
+# Generating ../fonts/Funnel_Display/otf/FunnelDisplay-Light.otf
+build ../fonts/Funnel_Display/otf/FunnelDisplay-Light.otf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpmouaezqg
+  operation = fix
+  args = 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpb0ho4x07
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpb0ho4x07: $
+    buildTTF instance_ufos/FunnelDisplay-Regular.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpc_shvegm
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpc_shvegm: $
+    buildOTF instance_ufos/FunnelDisplay-Regular.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp5lpozm6q
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp5lpozm6q: $
+    autohint /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpb0ho4x07
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/Funnel_Display/ttf/FunnelDisplay-Regular.ttf
+build ../fonts/Funnel_Display/ttf/FunnelDisplay-Regular.ttf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp5lpozm6q
+  operation = fix
+  args = 
+# Generating ../fonts/Funnel_Display/otf/FunnelDisplay-Regular.otf
+build ../fonts/Funnel_Display/otf/FunnelDisplay-Regular.otf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpc_shvegm
+  operation = fix
+  args = 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpwa_faop8
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpwa_faop8: $
+    buildTTF instance_ufos/FunnelDisplay-Medium.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpy7ii_8lk
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpy7ii_8lk: $
+    buildOTF instance_ufos/FunnelDisplay-Medium.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpi14ptwdd
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpi14ptwdd: $
+    autohint /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpwa_faop8
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/Funnel_Display/ttf/FunnelDisplay-Medium.ttf
+build ../fonts/Funnel_Display/ttf/FunnelDisplay-Medium.ttf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpi14ptwdd
+  operation = fix
+  args = 
+# Generating ../fonts/Funnel_Display/otf/FunnelDisplay-Medium.otf
+build ../fonts/Funnel_Display/otf/FunnelDisplay-Medium.otf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpy7ii_8lk
+  operation = fix
+  args = 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp7ql7e_1q
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp7ql7e_1q: $
+    buildTTF instance_ufos/FunnelDisplay-SemiBold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpjwfr6629
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpjwfr6629: $
+    buildOTF instance_ufos/FunnelDisplay-SemiBold.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmprlh921p1
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmprlh921p1: $
+    autohint /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp7ql7e_1q
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/Funnel_Display/ttf/FunnelDisplay-SemiBold.ttf
+build ../fonts/Funnel_Display/ttf/FunnelDisplay-SemiBold.ttf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmprlh921p1
+  operation = fix
+  args = 
+# Generating ../fonts/Funnel_Display/otf/FunnelDisplay-SemiBold.otf
+build ../fonts/Funnel_Display/otf/FunnelDisplay-SemiBold.otf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpjwfr6629
+  operation = fix
+  args = 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpuqoim8na
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpuqoim8na: $
+    buildTTF instance_ufos/FunnelDisplay-Bold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpk6wvihu3
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpk6wvihu3: $
+    buildOTF instance_ufos/FunnelDisplay-Bold.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpqub5ggkt
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpqub5ggkt: $
+    autohint /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpuqoim8na
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/Funnel_Display/ttf/FunnelDisplay-Bold.ttf
+build ../fonts/Funnel_Display/ttf/FunnelDisplay-Bold.ttf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpqub5ggkt
+  operation = fix
+  args = 
+# Generating ../fonts/Funnel_Display/otf/FunnelDisplay-Bold.otf
+build ../fonts/Funnel_Display/otf/FunnelDisplay-Bold.otf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpk6wvihu3
+  operation = fix
+  args = 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpk1a6teew
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpk1a6teew: $
+    buildTTF instance_ufos/FunnelDisplay-ExtraBold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmplr6uemet
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmplr6uemet: $
+    buildOTF instance_ufos/FunnelDisplay-ExtraBold.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpxxkkflo9
+build /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpxxkkflo9: $
+    autohint /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpk1a6teew
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/Funnel_Display/ttf/FunnelDisplay-ExtraBold.ttf
+build ../fonts/Funnel_Display/ttf/FunnelDisplay-ExtraBold.ttf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmpxxkkflo9
+  operation = fix
+  args = 
+# Generating ../fonts/Funnel_Display/otf/FunnelDisplay-ExtraBold.otf
+build ../fonts/Funnel_Display/otf/FunnelDisplay-ExtraBold.otf: fix $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmplr6uemet
+  operation = fix
+  args = 
+default $
+    /var/folders/w4/vwwfdrk12k986ttvvq4803zm0000gp/T/tmp0f58uh4l.buildStatstamp $
+    ../fonts/Funnel_Display/webfonts/FunnelDisplay[wght].woff2 $
+    ../fonts/Funnel_Display/webfonts/FunnelDisplay-Light.woff2 $
+    ../fonts/Funnel_Display/webfonts/FunnelDisplay-Regular.woff2 $
+    ../fonts/Funnel_Display/webfonts/FunnelDisplay-Medium.woff2 $
+    ../fonts/Funnel_Display/webfonts/FunnelDisplay-SemiBold.woff2 $
+    ../fonts/Funnel_Display/webfonts/FunnelDisplay-Bold.woff2 $
+    ../fonts/Funnel_Display/webfonts/FunnelDisplay-ExtraBold.woff2 $
+    ../fonts/Funnel_Display/otf/FunnelDisplay-Light.otf $
+    ../fonts/Funnel_Display/otf/FunnelDisplay-Regular.otf $
+    ../fonts/Funnel_Display/otf/FunnelDisplay-Medium.otf $
+    ../fonts/Funnel_Display/otf/FunnelDisplay-SemiBold.otf $
+    ../fonts/Funnel_Display/otf/FunnelDisplay-Bold.otf $
+    ../fonts/Funnel_Display/otf/FunnelDisplay-ExtraBold.otf
